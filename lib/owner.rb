@@ -35,3 +35,6 @@ class Owner
   def feed_fish
   end
 end
+Tom = Owner.new("tom")
+Tom.buy_fish("Akuma")
+Tom.buy_fish("Ryu")
