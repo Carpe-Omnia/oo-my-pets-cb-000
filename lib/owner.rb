@@ -2,7 +2,8 @@ require_relative "cat.rb"
 require_relative "dog.rb"
 require_relative "fish.rb"
 class Owner
-  attr_accessor :species
+  attr_reader :species
+  attr_accessor :pets
   @@all = []
   def initialize
     @species = "human"
