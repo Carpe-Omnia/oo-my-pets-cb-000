@@ -32,4 +32,6 @@ class Owner
     dog = Dog.new(name)
     @pets[dogs] << dog
   end
+  def feed_fish
+  end
 end
