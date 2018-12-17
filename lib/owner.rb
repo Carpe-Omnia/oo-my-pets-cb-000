@@ -1,5 +1,7 @@
 class Owner
   attr_accessor :species
-  def initialized
-    @species = human 
+  def initialize
+    @species = human
+    @species.freeze
+  end
 end
