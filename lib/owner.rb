@@ -70,4 +70,4 @@ Tom.buy_fish("Ryu")
 #Tom.pets[:fishes].each do |fish|
 #  puts fish.mood
 #end
-puts Tom.list_pets
+puts Tom.pets[:fishes]
