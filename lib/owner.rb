@@ -59,11 +59,15 @@ class Owner
     end
     @pets = {fishes: [], cats: [], dogs: []}
   end
+  def list_pets
+    "I have #{@pets[:fish.size] fish, }"
 end
 Tom = Owner.new("tom")
 Tom.buy_fish("Akuma")
 Tom.buy_fish("Ryu")
-Tom.feed_fish
-Tom.pets[:fishes].each do |fish|
-  puts fish.mood
-end
+#Tom.feed_fish
+#Tom.pets[:fishes].each do |fish|
+#  puts fish.mood
+#end
+puts Tom.pets[:fish.size]
+
