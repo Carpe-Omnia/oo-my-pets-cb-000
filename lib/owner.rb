@@ -41,5 +41,7 @@ end
 Tom = Owner.new("tom")
 Tom.buy_fish("Akuma")
 Tom.buy_fish("Ryu")
-
+Tom.feed_fish
+Tom.pets[:fishes].each do |fish|
+  puts fish.mood
 end
