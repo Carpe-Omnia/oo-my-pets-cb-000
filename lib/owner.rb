@@ -40,13 +40,25 @@ class Owner
   def play_with_cats
     @pets[:cats].each do |cat|
       cat.mood = "happy"
-    end 
-  end 
+    end
+  end
   def walk_dogs
     @pets[:dogs].each do |dog|
       dog.mood = "happy"
-    end 
-  end         
+    end
+  end
+  def sell_pets
+    @pets[:dogs].each do |dog|
+      dog.mood = "nervous"
+    end
+    @pets[:cats].each do |cat|
+      cat.mood = "nervous"
+    end
+    @pets[:fishes].each do |fish|
+      fish.mood = "nervous"
+    end
+    @pets = {fishes: [], cats: [], dogs: []}
+  end
 end
 Tom = Owner.new("tom")
 Tom.buy_fish("Akuma")
