@@ -8,3 +8,4 @@ end
 Tom = Owner.new
 puts Tom.species
 Tom.species = "hamster"
+puts Tom.species 
