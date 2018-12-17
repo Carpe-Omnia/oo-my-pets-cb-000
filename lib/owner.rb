@@ -2,10 +2,6 @@ class Owner
   attr_accessor :species
   def initialize
     @species = "human"
-    @species.freeze
+    @pets = {fishes: [], cats: [], dogs: []}
   end
 end
-Tom = Owner.new
-puts Tom.species
-Tom.species = "hamster"
-puts Tom.species 
