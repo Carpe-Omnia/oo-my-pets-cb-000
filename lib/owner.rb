@@ -60,7 +60,7 @@ class Owner
     @pets = {fishes: [], cats: [], dogs: []}
   end
   def list_pets
-    "I have #{@pets[:fish.size] fish, }"
+    "I have #{@pets[:fish.size]} fish, "
 end
 Tom = Owner.new("tom")
 Tom.buy_fish("Akuma")
