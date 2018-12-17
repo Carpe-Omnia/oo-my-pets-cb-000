@@ -3,11 +3,12 @@ require_relative "dog.rb"
 require_relative "fish.rb"
 class Owner
   attr_reader :species
-  attr_accessor :pets
+  attr_accessor :pets, :name
   @@all = []
-  def initialize
+  def initialize(name)
     @species = "human"
     @pets = {fishes: [], cats: [], dogs: []}
+    @name = name 
     @@all << self
   end
   def self.reset_all
