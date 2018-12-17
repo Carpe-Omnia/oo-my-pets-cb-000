@@ -9,7 +9,10 @@ class Owner
     @pets = {fishes: [], cats: [], dogs: []}
     @@all << self
   end
-  def self.reset_all 
+  def self.reset_all
     @@all = []
-  end   
+  end
+  def self.count
+    @@all.size
+  end
 end
