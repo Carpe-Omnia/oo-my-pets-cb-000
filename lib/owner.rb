@@ -33,11 +33,13 @@ class Owner
     @pets[:dogs] << dog
   end
   def feed_fish
+    @pets[:fishes].each do |fish|
+      fish.mood = "happy"
+    end
   end
 end
 Tom = Owner.new("tom")
 Tom.buy_fish("Akuma")
 Tom.buy_fish("Ryu")
-Tom.pets[:fishes].each do |fish|
-  puts fish.mood 
-end   
+
+end
